@@ -70,7 +70,7 @@ outer:
 		assessments[report] = true
 		if levels[1] == levels[0] {
 			assessments[report] = false
-			break
+			continue
 		}
 		if levels[1] > levels[0] {
 			for i := 1; i < len(levels); i++ {
